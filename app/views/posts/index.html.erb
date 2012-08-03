@@ -1,0 +1,14 @@
+<% content_for(:sidebar) do -%>
+  <ul class="nav nav-list">
+  <% @posts.each do |p| %>
+    <li><%= link_to 'clicky', p %></li>
+  <% end %>
+  </ul>
+<% end %>
+
+
+<div class="posts">
+  <% @posts.each do |p| %>
+    <%= render 'show', :post => p %>
+  <% end %>
+</div>
