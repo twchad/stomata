@@ -26,7 +26,9 @@ body {
   margin-bottom: 20px;
   margin-left: 1.5%;
   margin-right: 1.5%;
-  @include gradient-vertical(rgb(15, 174, 201), rgb(65, 224, 231));
+/*  @include gradient-vertical(rgb(15, 174, 201), rgb(65, 224, 231));*/
+  
+  @include gradient-vertical(rgb(78, 51, 58), rgb(126, 72, 76));
   
   .brand {
     color: #FFCC33;
@@ -35,6 +37,17 @@ body {
 
 .sidebar {
   padding: 1%;
+  background: #5A3D33;
+  
+  .nav-list li {
+    padding: 5px;
+    
+    a {
+      color: #FFDD22;
+      font-size: 12px;
+      text-shadow: none;
+    }
+  }
 }
 
 .content {
