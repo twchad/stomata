@@ -22,12 +22,15 @@ body {
 }
 
 .header {
-  color: #9C231F;
   padding: 10px;
   margin-bottom: 20px;
   margin-left: 1.5%;
   margin-right: 1.5%;
   @include gradient-vertical(rgb(15, 174, 201), rgb(65, 224, 231));
+  
+  .brand {
+    color: #FFCC33;
+  }
 }
 
 .sidebar {
