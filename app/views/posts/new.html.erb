@@ -1,0 +1,6 @@
+<%= form_for(@post, :html => {:class => 'new_post well'}) do |f| %>
+  <%= f.label 'content' %>
+  <%= f.text_area :content, :class => 'content' %>
+  <br />
+  <button type="submit" class="btn">Submit</button>
+<% end %>  

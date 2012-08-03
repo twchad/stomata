@@ -22,5 +22,8 @@ class PostsControllerTest < ActionController::TestCase
     assert_equal 1, Post.count
   end
 
-  
+  test "getting a post form" do
+    get :new
+    assert_template 'new'
+  end
 end
