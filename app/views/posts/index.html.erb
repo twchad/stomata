@@ -1,11 +1,12 @@
-<% content_for(:sidebar) do -%>
-  <ul class="nav nav-list">
-  <% @posts.each do |p| %>
-    <li><%= link_to 'clicky', p %></li>
+<% if @posts.size > 0 %>
+  <% content_for(:sidebar) do -%>
+    <ul class="nav nav-list">
+    <% @posts.each do |p| %>
+      <li><%= link_to 'clicky', p %></li>
+    <% end %>
+    </ul>
   <% end %>
-  </ul>
 <% end %>
-
 
 <div class="posts">
   <% @posts.each do |p| %>
