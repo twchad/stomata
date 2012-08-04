@@ -1,0 +1,17 @@
+id: 3519f760-bff8-012f-5390-12313d2df197
+setup:
+  commands:
+  - bundle install --without production
+  - bundle exec rake db:migrate --trace
+test:
+  commands:
+  - bundle exec rake
+deploy:
+  heroku:
+    staging:
+      name: lit-brook-3847
+    production:
+      name: lit-brook-3847
+      backup: false
+ruby_versions:
+- 1.9.2
