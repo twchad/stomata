@@ -2,7 +2,7 @@
   <% content_for(:sidebar) do -%>
     <ul class="nav nav-list">
     <% @posts.each do |p| %>
-      <li><%= link_to 'clicky', p %></li>
+      <li><%= link_to p.title, p %></li>
     <% end %>
     </ul>
   <% end %>
