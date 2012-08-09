@@ -1,4 +1,5 @@
-id: 3519f760-bff8-012f-5390-12313d2df197
+--- 
+id: fb15ea40-c254-012f-f013-123139181b69
 setup:
   commands:
   - bundle install --without production
@@ -9,9 +10,9 @@ test:
 deploy:
   heroku:
     staging:
-      name: lit-brook-3847
+      name: damp-journey-1698
     production:
-      name: lit-brook-3847
+      name: immense-scrubland-7895
       backup: false
 ruby_versions:
 - 1.9.2
