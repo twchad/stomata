@@ -13,7 +13,7 @@ class PostsControllerTest < ActionController::TestCase
   test "showing a single post" do
     p = Post.create(:content => 'boo', :title => 'c')
     get :show, :id => p
-    assert_select '.post', :text => 'boo'
+    assert_select '.post', :text => 'bam'
   end
 
   test "creating a post" do
