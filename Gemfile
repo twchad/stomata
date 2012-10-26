@@ -20,6 +20,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'heroku'
 # gem 'therubyrhino'
 
 # To use ActiveModel has_secure_password
