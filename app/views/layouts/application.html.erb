@@ -19,13 +19,13 @@
     <div class="row-fluid">
       <% if content_for?(:sidebar) %>
       <div class="row-fluid">
+        <div class="span9 content">
+          <%= yield %>
+        </div>
         <div class="span3">
           <div class="well sidebar sidebar-nav">
             <%= yield :sidebar %>
           </div>
-        </div>
-        <div class="span9 content">
-          <%= yield %>
         </div>
       </div>
       <% else %>

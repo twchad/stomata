@@ -1,3 +1,9 @@
+<div class="posts">
+  <% @posts.each do |p| %>
+    <%= render 'show', :post => p %>
+  <% end %>
+</div>
+
 <% if @posts.size > 0 %>
   <% content_for(:sidebar) do -%>
     <ul class="nav nav-list">
@@ -7,9 +13,3 @@
     </ul>
   <% end %>
 <% end %>
-
-<div class="posts">
-  <% @posts.each do |p| %>
-    <%= render 'show', :post => p %>
-  <% end %>
-</div>
