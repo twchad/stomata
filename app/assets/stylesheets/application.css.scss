@@ -69,7 +69,6 @@ body {
 
 .header {
   padding: 10px;
-  margin: 10px 20px;
   background-image: none;
   background-color: #96b670;
   border: 1px solid #96c770;
@@ -121,9 +120,31 @@ body {
 }
 
 .post {
+  h3 {
+    background-color: rgb(252,252,242);
+    border: 1px solid #DDD;
+    padding: 8px;
+  }
+  
+  & ~ .post {
+    margin-top: 10px;
+  }
+  
   color: #777;
-  padding: 20px;
+  padding: 10px 0;
   font-size: 14px;
-  background-color: rgb(252,252,242);
+}
+
+.actions {
+  padding: 10px;
+  font-weight: bold;
+  background-color: rgb(240,240,240);
   border: 1px solid #DDD;
+  @include box-shadow(0 2px 8px rgba(200,200,200,0.4));
+  @include border-radius(5px);
+  
+  a {
+    color: #AAA;
+    text-decoration: underline;
+  }
 }

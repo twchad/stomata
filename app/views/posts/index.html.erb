@@ -1,3 +1,7 @@
+<div class="actions">
+  <%= link_to 'New Post', new_post_path %>
+</div>
+
 <div class="posts">
   <% @posts.each do |p| %>
     <%= render 'show', :post => p %>
