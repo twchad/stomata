@@ -1,3 +1,4 @@
+Foo
 
 == Welcome to Rails
 
